@@ -1,0 +1,28 @@
+<header class="cabecalho d-flex align-items-center">
+    <div class="row w-100">
+        <div class="logo-container col-6 d-flex align-items-center">
+            <img [src]="logoAcademia" alt="Logo" class="logo img-fluid ms-2">
+            <span class="ms-1">PowerFit</span>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+            <button (click)="verMenu()" class="btn btn-nav d-block d-md-none">≡</button>
+            <ul class="menu-lista list-group list-group-flush d-none d-md-flex flex-row align-items-center">
+                <li class="sem-marcadores px-3">Home</li>
+                <li class="sem-marcadores px-3">Planos</li>
+                <li class="sem-marcadores px-3">Treinos</li>
+                <li class="sem-marcadores px-3">Trabalhe Conosco</li>
+                <li class="sem-marcadores px-3">Contato</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<nav *ngIf="visivel" class="lista d-md-none">
+    <ul class="menu-lista list-group list-group-flush d-flex justify-content-center align-items-center">
+        <li class="sem-marcadores py-3">Home</li>
+        <li class="sem-marcadores py-3">Planos</li>
+        <li class="sem-marcadores py-3">Treinos</li>
+        <li class="sem-marcadores py-3">Trabalhe Conosco</li>
+        <li class="sem-marcadores py-3">Contato</li>
+    </ul>
+</nav>

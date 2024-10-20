@@ -1,0 +1,74 @@
+* {
+    color: white;
+}
+
+.home {
+    background: url('https://www.shutterstock.com/image-illustration/gym-weights-under-strong-dramatic-600nw-472696720.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.botao-convite {
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E62813;
+}
+
+.botao-convite:hover {
+    background-color: #C61A10;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo {
+    width: 50%;
+    max-width: 70%;
+}
+
+.apresentacao {
+    width: 80%;
+    font-weight: bolder;
+    border-left: 2px solid red;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.subtitulo {
+    border-left: 2px solid white;
+}
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    color: #E62813;
+}
+
+.final p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .apresentacao {
+        width: 50%;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .final {
+        font-size: 1.3em;
+    }
+}
