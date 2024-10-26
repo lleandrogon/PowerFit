@@ -1,3 +1,14 @@
-.planos {
-    background-color: aliceblue;
+.card {
+    min-height: 350px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btn {
+    margin-top: auto;
 }
