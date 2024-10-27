@@ -1,0 +1,78 @@
+* {
+    color: white;
+}
+
+.treinos {
+    background: url('https://cdn1.thesculptedvegan.com/wp-content/uploads/2020/03/16095502/gym-background-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.seta-esquerda, .seta-direita {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.seta-esquerda:hover, .seta-direita:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.seta-esquerda {
+    position: absolute;
+    left: 20px;
+}
+
+.seta-direita {
+    position: absolute;
+    right: 20px;
+}
+
+.icone-grande {
+    font-size: 2.0em;
+    color: white;
+}
+
+.icone-grande:hover {
+    color: #C61A10;
+}
+
+.imagem-treino {
+    border: 3px solid #C61A10;
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+}
+
+.descricao-treino {
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .seta-esquerda, .seta-direita {
+        padding: 10px;
+    }
+
+    .imagem-treino {
+        width: 50%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagem-treino {
+        width: 90vw; /* A imagem ocupará 100% da largura em telas menores */
+    }
+
+    .seta-esquerda, .seta-direita {
+        position: relative; /* Muda a posição para relativa */
+        margin: 0 10px; /* Margem para dar um pouco de espaço */
+    }
+}
