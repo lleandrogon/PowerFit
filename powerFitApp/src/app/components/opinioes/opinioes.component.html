@@ -1,0 +1,24 @@
+<div class="opinioes container-fluid">
+    <div class="titulo d-md-flex justify-content-between align-items-center">
+        <div class="ms-md-5">
+            <h2>Algumas opiniões dos nossos alunos</h2>
+            <p>Na PowerFit, nós damos o melhor para cada aluno alcançar seus resultados, acreditando que essa dedicação é um dos diferenciais que nos destacam no mercado. Nossos profissionais são comprometidos em criar um ambiente motivador, com treinos que atendem os objetivos individuais. Valorizamos a qualidade dos nossos equipamentos proporcionando uma experiência completa. Aqui estão algumas opiniões de alunos que treinaram e experimentaram nossos valores na prática!</p>
+        </div>
+        <div>
+            <img [src]="imagemTitulo" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 text-center d-flex justify-content-center mb-3" *ngFor="let opiniao of opinioes">
+            <div class="card">
+                <div class="card-body">
+                    <img [src]="opiniao.foto" alt="" class="perfil img-fluid">
+                    <h6 class="card-subtitle mt-2 mb-2">{{ opiniao.nome }}</h6>
+                    <p class="card-text">{{ opiniao.opiniao }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
