@@ -12,7 +12,7 @@ export class PlanosComponent {
   teste: string = 'https://image.tuasaude.com/media/article/zj/xc/treino-de-braco_63228_l.jpg';
   light: string = 'https://blog.nextfit.com.br/wp-content/uploads/2024/02/exercicios-musculacao.jpg';
   fit: string = 'https://midias.agazeta.com.br/2021/02/09/homem-treinando-416526-article.jpg';
-  fitPlus: string = 'https://blog.gsuplementos.com.br/wp-content/uploads/2019/05/289511-5-dicas-para-ter-mais-foco-no-treino-e-ampliar-seus-resultados-scaled.jpg';
+  fitPlus: string = 'https://uploads-ssl.webflow.com/64dd05b33f019f79a7ec8f43/669980d40e951bf5366aa2ea_treino-de-hipertrofia.webp';
 
   vantagensTeste: string[] = ['Acesso ilimitado à academia por 1 mês.', 'Aulas de grupo gratuitas.','Avaliação física inicial inclusa.'];
 
