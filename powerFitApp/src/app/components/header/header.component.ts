@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  logoAcademia: string = 'https://static.vecteezy.com/system/resources/thumbnails/013/146/831/small_2x/body-builder-lifting-a-dumbbell-png.png';
+  constructor(public globalService: GlobalService) {}
+  
   visivel: boolean = false;
 
   verMenu() {

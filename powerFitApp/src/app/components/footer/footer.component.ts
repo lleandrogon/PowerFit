@@ -17,23 +17,28 @@ export class FooterComponent {
   redesSociais: RedeSocial[] = [
     {
       nome: 'Instagram',
-      foto: 'https://img.icons8.com/win10/512/FFFFFF/instagram-new.png'
+      foto: 'https://img.icons8.com/win10/512/FFFFFF/instagram-new.png',
+      link: 'https://www.instagram.com/'
     },
     {
       nome: 'Facebook',
-      foto: 'https://img.icons8.com/ios7/600/FFFFFF/facebook-new.png'
+      foto: 'https://img.icons8.com/ios7/600/FFFFFF/facebook-new.png',
+      link: 'https://www.facebook.com/'
     },
     {
       nome: 'Tiktok',
-      foto: 'https://img.icons8.com/win10/512/FFFFFF/tiktok.png'
+      foto: 'https://img.icons8.com/win10/512/FFFFFF/tiktok.png',
+      link: 'https://www.tiktok.com/login?lang=pt-BR&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Dpt-BR'
     },
     {
       nome: 'X',
-      foto: 'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png'
+      foto: 'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png',
+      link: 'https://x.com/?lang=pt-br'
     },
     {
       nome: 'LinkedIn',
-      foto: 'https://img.icons8.com/ios11/200/FFFFFF/linkedin.png'
+      foto: 'https://img.icons8.com/ios11/200/FFFFFF/linkedin.png',
+      link: 'https://br.linkedin.com/'
     },
   ]
 

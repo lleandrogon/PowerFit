@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  logoAcademia: string = 'https://static.vecteezy.com/system/resources/thumbnails/013/146/831/small_2x/body-builder-lifting-a-dumbbell-png.png';
+  constructor (public globalService: GlobalService) {}
 }
