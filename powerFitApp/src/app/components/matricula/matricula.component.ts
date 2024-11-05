@@ -1,18 +1,28 @@
 import { Component } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 import { CommonModule } from '@angular/common';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-matricula',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './matricula.component.html',
   styleUrl: './matricula.component.css'
 })
 export class MatriculaComponent {
   constructor(public globalService: GlobalService) {}
 
-  
+  matriculaForm = new FormGroup({
+    nome: new FormControl(''),
+    nascimento: new FormControl(''),
+    genero: new FormControl(''),
+    email: new FormControl(''),
+    telefone: new FormControl(''),
+    peso: new FormControl(''),
+    altura: new FormControl(''),
+    plano: new FormControl(''),
+  });
 
   teste: string = 'https://image.tuasaude.com/media/article/zj/xc/treino-de-braco_63228_l.jpg';
   light: string = 'https://blog.nextfit.com.br/wp-content/uploads/2024/02/exercicios-musculacao.jpg';

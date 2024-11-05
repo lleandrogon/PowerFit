@@ -10,8 +10,12 @@ h2 {
 
 label {
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 500;
     color: #E62813;
+}
+
+input, select {
+    border: 2px solid black;
 }
 
 .card {
@@ -43,4 +47,8 @@ h5 {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease, transform 0.3s ease;
+}
+
+.botao-formulario {
+    font-weight: 500;
 }
