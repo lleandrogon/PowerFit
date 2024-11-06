@@ -20,5 +20,5 @@ export class PlanosComponent {
 
   vantagensFit: string[] = ['Acesso 24 horas.', 'Aulas de grupo ilimitadas.', '2 consultas mensais com personal.'];
 
-  vantagensFitPlus: string[] = ['Acesso 24 horas à academia.', 'Aulas de grupo ilimitadas.', 'Consultas ilimitadas com personal trainer.'];
+  vantagensFitPlus: string[] = ['Acesso 24 horas.', 'Aulas de grupo ilimitadas.', 'Consultas ilimitadas com personal.'];
 }

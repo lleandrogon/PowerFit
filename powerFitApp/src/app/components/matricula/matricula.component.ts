@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FooterComponent } from "../footer/footer.component";
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-matricula',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FooterComponent, HeaderComponent],
   templateUrl: './matricula.component.html',
   styleUrl: './matricula.component.css'
 })
@@ -14,14 +16,14 @@ export class MatriculaComponent {
   constructor(public globalService: GlobalService) {}
 
   matriculaForm = new FormGroup({
-    nome: new FormControl(''),
-    nascimento: new FormControl(''),
-    genero: new FormControl(''),
-    email: new FormControl(''),
-    telefone: new FormControl(''),
-    peso: new FormControl(''),
-    altura: new FormControl(''),
-    plano: new FormControl(''),
+    nome: new FormControl(null, [Validators.required, Validators.minLength(3)]),
+    nascimento: new FormControl(null, [Validators.required]),
+    genero: new FormControl(null, [Validators.required]),
+    email: new FormControl(null, [Validators.required, Validators.email]),
+    telefone: new FormControl(null, [Validators.required, Validators.pattern('^\\d{10,11}$')]),
+    peso: new FormControl(null, [Validators.required, Validators.min(0)]),
+    altura: new FormControl(null, [Validators.required, Validators.min(0)]),
+    plano: new FormControl(null, [Validators.required])
   });
 
   teste: string = 'https://image.tuasaude.com/media/article/zj/xc/treino-de-braco_63228_l.jpg';
@@ -35,5 +37,5 @@ export class MatriculaComponent {
 
   vantagensFit: string[] = ['Acesso 24 horas.', 'Aulas de grupo ilimitadas.', '2 consultas mensais com personal.'];
 
-  vantagensFitPlus: string[] = ['Acesso 24 horas à academia.', 'Aulas de grupo ilimitadas.', 'Consultas ilimitadas com personal trainer.'];
+  vantagensFitPlus: string[] = ['Acesso 24 horas.', 'Aulas de grupo ilimitadas.', 'Consultas ilimitadas com personal trainer.'];
 }
