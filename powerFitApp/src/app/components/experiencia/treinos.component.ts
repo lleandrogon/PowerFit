@@ -9,7 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './experiencia.component.css'
 })
 
-export class TreinosComponent {
+export class ExperienciaComponent {
   imagens: string[] = [
     'https://w7academia.com.br/wp-content/uploads/2023/05/W7ACADEMIATIJUCAS_PorqueimportantetreinaremumaAcademiacomequipamentosdequalidade.png',
     'https://uploads-ssl.webflow.com/64dd05b33f019f79a7ec8f43/66bf7eca9c44f4d087db871d_aula-de-bike-indoor.webp',

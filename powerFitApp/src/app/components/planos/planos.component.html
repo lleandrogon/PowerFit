@@ -2,52 +2,13 @@
     <h3 class="text-center mt-4">Nossos Planos</h3>
     <p class="text-center ms-md-5 me-md-5">Comece a transformar sua saúde hoje mesmo! Na PowerFit, oferecemos o pacote de serviços perfeito para ajudá-lo a atingir suas metas de bem-estar. Compare nossos planos e escolha o que melhor se adapta ao seu estilo de vida e orçamento. Venha descobrir como é fácil cuidar de você!</p>
 
-    <div class="row mt-5 text-center d-flex justify-content-center">
-        <div class="col-md-3 mb-4">
+    <div class="row mt-4 text-center d-flex justify-content-center mx-2">
+        <div class="col-md-3 mb-4" *ngFor="let plano of globalService.planos">
             <div class="card h-100">
-                <img [src]="teste" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Plano de Teste</h5>
-                    <ul class="sem-marcadores">
-                        <li *ngFor="let item of vantagensTeste">{{ item }}</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card h-100">
-                <img [src]="light" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Plano Light</h5>
-                    <ul class="sem-marcadores">
-                        <li *ngFor="let item of vantagensLight">{{ item }}</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card h-100">
-                <img [src]="fit" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Plano Fit</h5>
-                    <ul class="sem-marcadores">
-                        <li *ngFor="let item of vantagensFit">{{ item }}</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card h-100">
-                <img [src]="fitPlus" class="card-img-top" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h5 class="card-title">Plano Fit Plus</h5>
-                    <ul class="sem-marcadores">
-                        <li *ngFor="let item of vantagensFitPlus">{{ item }}</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
+                <img [src]="plano.imagem" class="card-img-top" alt="Imagem do plano">
+                <div class="card-body">
+                    <h5 class="card-title">{{ plano.tipo }}</h5>
+                    <p *ngFor="let item of plano.vantagens">{{ item }}</p>
                 </div>
             </div>
         </div>
