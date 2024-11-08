@@ -1,0 +1,31 @@
+.equipe {
+    background: url('https://i.pinimg.com/originals/10/a1/54/10a154401f3ea056c4e88600857a1a57.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+span {
+    height: 5px;
+    width: 270px;
+    background-color: #E62813;
+}
+
+.card {
+    border: 3px solid #E62813;
+}
+
+.card-body {
+    background: #2A2A2A;
+    color: white;
+}
+
+h5 {
+    color: #E62813;
+    font-weight: 500;
+}

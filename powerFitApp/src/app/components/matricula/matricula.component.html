@@ -1,7 +1,13 @@
-<header class="container-fluid mb-2 pt-2">
-    <img [src]="globalService.logoUrl" alt="logo" class="logo img-fluid mx-auto d-block">
-    <h2 class="text-center">Escolha um plano e treine conosco:</h2>
+<header class="container-fluid d-flex align-items-center mb-2 p-2">
+    <div class="ms-4">
+        <img [src]="globalService.logoUrl" alt="logo" class="logo img-fluid">
+    </div>
+    <div class="ms-auto me-4">
+        <button class="btn-voltar btn" [routerLink]="['/']">Voltar</button>
+    </div>
 </header>
+
+<h2 class="text-center mt-2">Escolha um plano e treine conosco:</h2>
 
 <div class="d-flex justify-content-center mx-2 mx-md-0">
     <form [formGroup]="matriculaForm" class="formulario-container text-center py-3 px-4">
@@ -138,6 +144,6 @@
             </div>
         </div>
     </div>
-</div>    
+</div>
 
 <app-footer></app-footer>

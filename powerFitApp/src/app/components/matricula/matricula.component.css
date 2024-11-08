@@ -1,5 +1,14 @@
+header {
+    background: linear-gradient(to bottom, #cfcfcf, rgb(255, 255, 255));
+}
+
 .logo {
-    width: 150px;
+    width: 130px;
+}
+
+.btn-voltar {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 h2 {

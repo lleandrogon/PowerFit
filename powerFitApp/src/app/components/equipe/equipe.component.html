@@ -1,3 +1,24 @@
-<div class="container my-5">
-    <h2 class="text-center mb-4">Nossa Equipe</h2>
+<div class="equipe container-fluid py-3">
+    <div class="mb-5 my-4">
+        <div class="d-flex justify-content-center">
+            <h2 class="text-center">Nossa Equipe</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="row mt-4 text-center d-flex justify-content-center mx-2">
+        @for (item of equipe; track equipe) {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img [src]="item.foto" class="card-img-top" alt="Imagem do plano">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ item.nome }}</h3>
+                        <h5>{{ item.area }}</h5>
+                        <p>{{ item.resumo }}</p>
+                    </div>
+                </div>
+            </div>
+        }  
 </div>

@@ -3,12 +3,12 @@ import { GlobalService } from '../../services/global.service';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FooterComponent } from "../footer/footer.component";
-import { HeaderComponent } from "../header/header.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-matricula',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FooterComponent, HeaderComponent],
+  imports: [CommonModule, ReactiveFormsModule, FooterComponent, RouterModule],
   templateUrl: './matricula.component.html',
   styleUrl: './matricula.component.css'
 })
