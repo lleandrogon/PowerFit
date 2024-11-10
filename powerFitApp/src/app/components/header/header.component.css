@@ -24,10 +24,18 @@
     text-align: center;
 }
 
+.menu-lista li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-lista li a:hover {
+    color: #C61A10;
+}
+
 .menu-lista li:hover {
     background-color: rgba(183, 164, 164, 0.1);
     color: #333;
-    transform: scale(1.05);
     border: 1px solid rgba(183, 164, 164, 0.5);
     cursor: pointer;
 }
