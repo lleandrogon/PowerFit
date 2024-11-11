@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MatriculaComponent } from './components/matricula/matricula.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
+import { CurriculoComponent } from './components/curriculo/curriculo.component';
 
 export const routes: Routes = [
     {
@@ -26,5 +27,9 @@ export const routes: Routes = [
     {
         path: 'matricula',
         component: MatriculaComponent
+    },
+    {
+        path: 'curriculo',
+        component: CurriculoComponent
     }
 ];
