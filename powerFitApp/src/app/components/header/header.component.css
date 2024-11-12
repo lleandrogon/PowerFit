@@ -7,7 +7,7 @@
 
 .logo {
     width: 40%;
-    max-width: 100px;
+    max-width: 110px;
 }
 
 .btn-nav {
@@ -44,7 +44,7 @@
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .menu-lista li:hover {
         background-color: white;
         color: #333;

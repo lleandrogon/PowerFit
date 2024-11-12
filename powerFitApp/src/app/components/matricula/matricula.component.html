@@ -14,8 +14,7 @@
         <div class="row py-4 mx-3">
             <div class="mb-3 col-md-6">
                 <label for="nome" class="form-label">Nome Completo:</label>
-                <input type="text" class="form-control" id="nome" formControlName="nome"
-                    placeholder="Mínimo 3 caracteres">
+                <input type="text" class="form-control" id="nome" formControlName="nome">
                 @if (matriculaForm.controls['nome'].touched && matriculaForm.controls['nome'].errors?.['required']) {
                 <div class="alert alert-warning d-flex justify-content-center mt-2">
                     <strong>Nome é obrigatório!</strong>
@@ -23,7 +22,7 @@
                 } @else if (matriculaForm.controls['nome'].touched &&
                 matriculaForm.controls['nome'].errors?.['minlength']) {
                 <div class="alert alert-warning d-flex justify-content-center mt-2">
-                    <strong>Nome completo deve conter pelo menos 3 caracteres.</strong>
+                    <strong>Nome completo deve conter pelo menos 5 caracteres.</strong>
                 </div>
                 }
             </div>
@@ -68,7 +67,7 @@
             <div class="mb-3 col-md-6">
                 <label for="telefone" class="form-label">Telefone:</label>
                 <input type="number" class="form-control" id="telefone" formControlName="telefone"
-                    placeholder="Telefone (10 ou 11 dígitos)">
+                    placeholder="10 ou 11 dígitos.">
                 @if (matriculaForm.controls['telefone'].touched &&
                 matriculaForm.controls['telefone'].errors?.['required']) {
                 <div class="alert alert-warning d-flex justify-content-center mt-2">

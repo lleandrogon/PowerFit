@@ -16,7 +16,7 @@ export class MatriculaComponent {
   constructor(public globalService: GlobalService) {}
 
   matriculaForm = new FormGroup({
-    nome: new FormControl(null, [Validators.required, Validators.minLength(3)]),
+    nome: new FormControl(null, [Validators.required, Validators.minLength(5)]),
     nascimento: new FormControl(null, [Validators.required]),
     genero: new FormControl(null, [Validators.required]),
     email: new FormControl(null, [Validators.required, Validators.email]),
@@ -32,7 +32,7 @@ export class MatriculaComponent {
 
   enviarFormulario() {
     const dadosFormulario = this.matriculaForm.value;
-    console.log('Dados do formulário:', dadosFormulario);
-    alert('Dados enviado com sucesso!')
+    console.log('Dados do Aluno:', dadosFormulario);
+    alert('Matrícula com sucesso!')
   }
 }

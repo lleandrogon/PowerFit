@@ -10,97 +10,177 @@
 <h2 class="text-center mt-2">Venha Trabalhar Conosco!</h2>
 
 <div class="formulario-container">
-    <form>
+    <form [formGroup]="curriculoForm">
         <div class="row">
             <h6 class="text-center">Informações Pessoais</h6>
             <div class="col-md-6 mb-3">
                 <label for="nome" class="form-label">Nome Completo:</label>
-                <input type="text" class="form-control" id="nome">
+                <input type="text" class="form-control" id="nome" formControlName="nome">
+                @if (curriculoForm.controls['nome'].touched && curriculoForm.controls['nome'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Nome é obrigatório!</strong>
+                    </div>
+                } @else if (curriculoForm.controls['nome'].touched && curriculoForm.controls['nome'].errors?.['minlength']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Nome completo deve conter pelo menos 5 caracteres.</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" formControlName="email">
+                @if (curriculoForm.controls['email'].touched && curriculoForm.controls['email'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Email é obrigatório!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="number" class="form-control" id="telefone">
+                <input type="number" class="form-control" id="telefone" placeholder="10 ou 11 dígitos." formControlName="telefone">
+                @if (curriculoForm.controls['telefone'].touched && curriculoForm.controls['telefone'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Telefone é obrigatório!</strong>
+                    </div>
+                } @else if (curriculoForm.controls['telefone'].touched && curriculoForm.controls['telefone'].errors?.['pattern']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Telefone deve ter 10 ou 11 dígitos!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="nascimento" class="form-label">Data de Nascimento:</label>
-                <input type="date" class="form-control" id="nascimento">
+                <input type="date" class="form-control" id="nascimento" formControlName="nascimento">
+                @if (curriculoForm.controls['nascimento'].touched && curriculoForm.controls['nascimento'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Data de nascimento é obrigatória!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="endereco" class="form-label">Endereço:</label>
-                <input type="text" class="form-control" id="endereco">
+                <input type="text" class="form-control" id="endereco" formControlName="endereco">
+                @if (curriculoForm.controls['endereco'].touched && curriculoForm.controls['endereco'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Endereço é obrigatório!</strong>
+                    </div>
+                } @else if (curriculoForm.controls['endereco'].touched && curriculoForm.controls['endereco'].errors?.['minlength']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Endereço deve conter pelo menos 5 caracteres.</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
-                <label for="Linkedin" class="form-label">Linkedin ou Portfólio Online:</label>
-                <input type="url" class="form-control" id="linkedin">
+                <label for="Linkedin" class="form-label">Linkedin ou Portfólio Online (Opcional):</label>
+                <input type="url" class="form-control" id="linkedin" formControlName="linkedin">
             </div>
             <h6 class="text-center mt-4">Formação Acadêmica</h6>
             <div class="col-md-6 mb-3">
                 <label for="escolaridade" class="form-label">Escolaridade:</label>
-                <select name="" id="escolaridade" class="form-control">
+                <select name="" id="escolaridade" class="form-control" formControlName="escolaridade">
                     <option value="" disabled selected></option>
                     <option value="ensino-medio">Ensino Médio</option>
                     <option value="tecnico">Técnico</option>
                     <option value="graduacao">Graduação</option>
                     <option value="pos-graduacao">Pós-graduação</option>
                 </select>
+                @if (curriculoForm.controls['escolaridade'].touched && curriculoForm.controls['escolaridade'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Escolaridade é obrigatória!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="instituicao" class="form-label">Instituição de Ensino:</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" formControlName="instituicao">
+                @if (curriculoForm.controls['instituicao'].touched && curriculoForm.controls['instituicao'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Instituição é obrigatória!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
-                <label for="curso" class="form-label">Curso:</label>
-                <input type="text" class="form-control">
+                <label for="curso" class="form-label">Curso (Opcional):</label>
+                <input type="text" class="form-control" placeholder="Ignorar se a escolaridade for ensino médio." formControlName="curso">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="conclusao" class="form-label">Ano de Conclusão:</label>
-                <input type="number" class="form-control" name="" id="conclusao">
+                <input type="number" class="form-control" name="" id="conclusao" formControlName="conclusao">
+                @if (curriculoForm.controls['conclusao'].touched && curriculoForm.controls['conclusao'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Ano de conclusão é obrigatório!</strong>
+                    </div>
+                }
             </div>
             <h6 class="text-center mt-4">Experiência Profissional</h6>
             <div class="col-md-6 mb-3">
-                <label for="empresa" class="form-label">Empresa:</label>
-                <input type="text" class="form-control">
+                <label for="empresa" class="form-label">Empresa (Opcional):</label>
+                <input type="text" class="form-control" formControlName="empresa">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="cargo" class="form-label">Cargo:</label>
-                <input type="text" class="form-control">
+                <label for="cargo" class="form-label">Cargo (Opcional):</label>
+                <input type="text" class="form-control" formControlName="cargo">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="periodo" class="form-label">Período:</label>
-                <input type="text" class="form-control">
+                <label for="periodo" class="form-label">Período (Opcional):</label>
+                <input type="text" class="form-control" formControlName="periodo">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="descricao" class="form-label">Descrição das Atividades:</label>
-                <input type="text" class="form-control">
+                <label for="descricao" class="form-label">Descrição das Atividades (Opcional):</label>
+                <input type="text" class="form-control" formControlName="descricao">
             </div>
             <h6 class="text-center mt-4">Competências e Habilidades</h6>
             <div class="col-md-6 mb-3">
                 <label for="habilidades" class="form-label">Habilidades:</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" formControlName="habilidades">
+                @if (curriculoForm.controls['habilidades'].touched && curriculoForm.controls['habilidades'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Habilidades são obrigatórias!</strong>
+                    </div>
+                } @else if (curriculoForm.controls['habilidades'].touched && curriculoForm.controls['habilidades'].errors?.['minlength']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Campo de habilidades deve ter no mínimo 5 caracteres.</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
-                <label for="idiomas" class="form-label">Idiomas:</label>
-                <input type="text" class="form-control">
+                <label for="idiomas" class="form-label">Idiomas (Opcional):</label>
+                <input type="text" class="form-control" formControlName="idiomas">
             </div>
             <h6 class="text-center mt-4">Documentos</h6>
             <div class="col-md-6 mb-3">
                 <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="11 dígitos." formControlName="cpf">
+                @if (curriculoForm.controls['cpf'].touched && curriculoForm.controls['cpf'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>CPF é obrigatório!</strong>
+                    </div>    
+                } @else if (curriculoForm.controls['cpf'].touched && curriculoForm.controls['cpf'].errors?.['minlength']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>CPF deve ter 11 dígitos!</strong>
+                    </div>
+                } @else if (curriculoForm.controls['cpf'].touched && curriculoForm.controls['cpf'].errors?.['maxlength']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>CPF deve ter 11 dígitos!</strong>
+                    </div>
+                }
             </div>
             <div class="col-md-6 mb-3">
                 <label for="curriculo" class="form-label">Currículo (PDF):</label>
-                <input type="file" class="form-control">
+                <input type="file" class="form-control" formControlName="curriculo">
+                @if (curriculoForm.controls['curriculo'].touched && curriculoForm.controls['curriculo'].errors?.['required']) {
+                    <div class="alert alert-warning d-flex justify-content-center mt-2">
+                        <strong>Currículo é obrigatório!</strong>
+                    </div>
+                }
             </div>
         </div>
         <div class="d-flex justify-content-end mt-3 ">
-            <button type="button" class="btn py-1 px-4 me-3">Apagar</button>
-            <button type="button" class="btn py-1 px-4">Enviar</button>
+            <button type="button" class="btn py-md-2 px-md-5 me-3" (click)="limparFormulario()">Apagar</button>
+            <button type="button" class="btn py-md-2 px-md-5" (click)="enviarFormulario()" [disabled]="!curriculoForm.valid">Enviar</button>
         </div>
     </form>
+    
 </div>
 
 <app-footer></app-footer>

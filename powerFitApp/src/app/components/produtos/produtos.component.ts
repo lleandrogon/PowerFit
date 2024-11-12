@@ -13,12 +13,12 @@ export class ProdutosComponent {
   produto: Produto[] = [
     {
       nome: 'Camisa Esportiva',
-      foto: 'https://venifutebol.com.br/cdn/shop/files/CamisaNikeVermelhaePreta1.png?v=1713700904',
+      foto: 'https://i1.t4s.cz//products/fd7487-657/nike-m-nk-df-strk24-ss-top-k-717904-fd7487-657-960.webp',
       preco: 120.00
     },
     {
       nome: 'Short Esportivo',
-      foto: 'https://venifutebol.com.br/cdn/shop/files/ShortNikePretoeVermelho1.png?v=1713710002',
+      foto: 'https://imgcentauro-a.akamaihd.net/1366x1366/95789219.jpg',
       preco: 90.00
     },
     {
