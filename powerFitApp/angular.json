@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/PowerFit/powerFitApp/",
             "outputPath": "dist/power-fit-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
