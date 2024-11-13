@@ -1,22 +1,24 @@
 <div class="home container-fluid">
     <div class="row align-items-center">
         <div class="col-6 col-md-8 col-lg-9">
-            <button class="botao-convite btn p-1 p-sm-2 p-md-3 ms-3 mt-2">Venha ser um PowerFitter</button>
+            <button class="botao-convite btn p-1 p-sm-2 p-md-3 ms-3 mt-2" [@buttonAnimation]>
+                Venha ser um PowerFitter
+            </button>
         </div>
         <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-end">
-            <img class="logo img-fluid" [src]="globalService.logoUrl" alt="logo">
+            <img class="logo img-fluid" [src]="globalService.logoUrl" alt="logo" [@logoAnimation]>
         </div>
     </div>
 
-    <div class="apresentacao ms-3 mt-4 mt-md-1">
+    <div class="apresentacao ms-3 mt-4 mt-md-1" [@textAnimation]>
         <h3 class="ms-2">TREINE NA MELHOR ACADEMIA DO BRASIL</h3>
     </div>
 
-    <div class="subtitulo ms-3">
+    <div class="subtitulo ms-3" [@textAnimation]>
         <h4 class="ms-2">PowerFit</h4>
     </div>
 
-    <div class="final d-md-flex mt-5 ms-3 w-100">
+    <div class="final d-md-flex mt-5 ms-3 w-100" [@textAnimation]>
         <p>Encorajando você a <span style="color: #E62813;">se tornar o melhor</span> com o apoio de profissionais
             qualificados.</p>
         <div class="matricula d-md-flex justify-content-end w-100 mt-4 mt-md-0">
