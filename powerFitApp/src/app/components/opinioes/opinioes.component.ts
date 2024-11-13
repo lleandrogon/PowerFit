@@ -24,14 +24,14 @@ export class OpinioesComponent {
       opiniao: 'A estrutura é incrível, o ambiente é sempre motivador. Os instrutores ajudam em cada etapa do treino. Estou muito feliz com os resultados!'
     },
     {
-      nome: 'Josivaldo de Souza',
+      nome: 'Ezequiel Moreira',
       foto: 'https://cdn-icons-png.flaticon.com/512/2716/2716238.png',
       opiniao: 'Já passei por várias academias, mas a PowerFit é a única que  me fez sentir motivado. O espaço é excelente. Gosto muito da variedade de equipamentos.'
     },
     {
       nome: 'Mariana Silva',
       foto: 'https://cdn-icons-png.flaticon.com/512/4128/4128359.png',
-      opiniao: 'A PowerFit é o lugar perfeito para quem quer treinar com qualidade e ser bem recebido. Os professores são muito competentes.'
+      opiniao: 'A PowerFit é o lugar perfeito para quem quer treinar com qualidade e ser bem recebido. Os professores são muito competentes. Isso sem falar dos equipamentos.'
     }
   ];
 }

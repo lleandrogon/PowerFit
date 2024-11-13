@@ -9,6 +9,7 @@ import { MatriculaComponent } from './components/matricula/matricula.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
+import { ProdutosComponent } from './components/produtos/produtos.component';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,7 @@ export const routes: Routes = [
             { path: 'home', component: HomeComponent },
             { path: 'planos', component: PlanosComponent },
             { path: 'experiencia', component: ExperienciaComponent },
+            { path: 'produtos', component: ProdutosComponent },
             { path: 'equipe', component: EquipeComponent },
             { path: 'opinioes', component: OpinioesComponent },
             { path: 'footer', component: FooterComponent}

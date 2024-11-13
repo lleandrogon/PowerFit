@@ -33,6 +33,6 @@ export class MatriculaComponent {
   enviarFormulario() {
     const dadosFormulario = this.matriculaForm.value;
     console.log('Dados do Aluno:', dadosFormulario);
-    alert('Matrícula com sucesso!')
+    alert('Matrícula com sucesso!');
   }
 }
