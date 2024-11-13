@@ -15,7 +15,8 @@ export class GlobalService {
         '1 mês de acesso ilimitado.',
         'Aulas de grupo gratuitas.',
         'Avaliação física inicial inclusa.'
-      ]
+      ],
+      preco: 0.00
     },
     {
       tipo: 'Plano Light',
@@ -24,7 +25,8 @@ export class GlobalService {
         'Acesso de segunda a sexta.',
         'Aulas de grupo ilimitadas.',
         '1 consulta mensal com personal.'
-      ]
+      ],
+      preco: 60.00
     },
     {
       tipo: 'Plano Fit',
@@ -33,7 +35,8 @@ export class GlobalService {
         'Acesso 24 horas.',
         'Aulas de grupo ilimitadas.',
         '2 consultas mensais com personal.'
-      ]
+      ],
+      preco: 100.00
     },
     {
       tipo: 'Plano FitPlus',
@@ -42,7 +45,8 @@ export class GlobalService {
         'Acesso 24 horas.',
         'Aulas de grupo ilimitadas.',
         'Consultas ilimitadas com personal.'
-      ]
+      ],
+      preco: 120.00
     }
   ];
 }

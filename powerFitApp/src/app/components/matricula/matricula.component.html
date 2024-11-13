@@ -140,6 +140,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ plano.tipo }}</h5>
                 <p *ngFor="let item of plano.vantagens">{{ item }}</p>
+                <p class="preco text-success fw-bold mt-3">R$ {{ plano.preco }},00</p>
             </div>
         </div>
     </div>

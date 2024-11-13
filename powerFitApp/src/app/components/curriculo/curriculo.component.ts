@@ -42,6 +42,6 @@ export class CurriculoComponent {
   enviarFormulario() {
     const dadosFormulario = this.curriculoForm.value;
     console.log('Dados do Curriculo:', dadosFormulario);
-    alert('Currículo enviado com sucesso!')
+    alert('Currículo enviado com sucesso!');
   }
 }

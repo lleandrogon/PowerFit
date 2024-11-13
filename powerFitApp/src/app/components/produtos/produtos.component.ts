@@ -40,6 +40,21 @@ export class ProdutosComponent {
       nome: 'Garrafa',
       foto: 'https://static.prospin.com.br/media/catalog/product/cache/6e59e4946046b080cb91aa3230980e44/a/c/ac3788-028-garrafa-nike-core-hydro-flow-futura-709ml-cinza-e-vermelho.jpg',
       preco: 170.00
+    },
+    {
+      nome: 'Whey Protein',
+      foto: 'https://http2.mlstatic.com/D_NQ_NP_669598-MLU75135398027_032024-O.webp',
+      preco: 60.00
+    },
+    {
+      nome: 'Creatina',
+      foto: 'https://mundoverde.vtexassets.com/arquivos/ids/275120/Creatina-Integralmedica-300g_0.jpg?v=638582375274800000',
+      preco: 50.00
+    },
+    {
+      nome: 'Coqueteleira',
+      foto: 'https://www.gsuplementos.com.br/upload/produto/imagem/coqueteleira-simples-vermelha-growth-supplements.png',
+      preco: 20.00
     }
   ]
 }

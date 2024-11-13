@@ -5,7 +5,7 @@ h3 {
 
 .card {
     min-height: 350px;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 .card-body {
@@ -20,17 +20,6 @@ h5 {
     font-weight: bold;
 }
 
-.btn {
-    margin-top: auto;
-    background-color: #E62813;
-    color: white;
-    border: none;
+.preco {
+    font-size: 1.5em;
 }
-
-.btn:hover {
-    background-color: #C61A10;
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease, transform 0.3s ease;
-}
-
