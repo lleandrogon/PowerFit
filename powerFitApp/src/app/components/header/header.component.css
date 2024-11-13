@@ -10,6 +10,13 @@
     max-width: 110px;
 }
 
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
 .btn-nav {
     color: black;
     background-color: transparent;
