@@ -1,10 +1,9 @@
-.redes-contatos {
-    background-color: #0A0A0A;
+* {
+    overflow-x: hidden;
 }
 
-.redes-sociais img, .contatos img {
-    max-width: 100%;
-    height: auto;
+.redes-contatos {
+    background-color: #0A0A0A;
 }
 
 .redes-sociais img {
