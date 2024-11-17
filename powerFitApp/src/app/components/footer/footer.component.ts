@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RedeSocial } from '../../models/redeSocial';
 import { Contato } from '../../models/contato';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })

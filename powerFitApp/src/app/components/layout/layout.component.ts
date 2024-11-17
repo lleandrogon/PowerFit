@@ -7,11 +7,12 @@ import { FooterComponent } from "../footer/footer.component";
 import { HomeComponent } from "../home/home.component";
 import { EquipeComponent } from "../equipe/equipe.component";
 import { ProdutosComponent } from "../produtos/produtos.component";
+import { VazioComponent } from "../vazio/vazio.component";
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [HeaderComponent, PlanosComponent, ExperienciaComponent, OpinioesComponent, FooterComponent, HomeComponent, EquipeComponent, ProdutosComponent],
+  imports: [HeaderComponent, PlanosComponent, ExperienciaComponent, OpinioesComponent, FooterComponent, HomeComponent, EquipeComponent, ProdutosComponent, VazioComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })

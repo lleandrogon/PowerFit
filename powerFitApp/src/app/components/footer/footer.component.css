@@ -1,36 +1,28 @@
-* {
-    color: white;
-}
-
 .redes-contatos {
     background-color: #0A0A0A;
-    padding: 0 15px;
 }
 
 .redes-sociais img {
-    width: 50px;
+    width: 40px;
     margin-top: 70px;
     border-radius: 50%;
-    transition: transform 0.3s;
 }
 
 .redes-sociais img:hover {
     cursor: pointer;
     transform: scale(1.1);
-}
+    transition: transform 0.3s;
+  }
 
 .contatos img {
     width: 30px;
     display: none;
 }
 
-.contatos span {
-    text-align: center;
-}
-
 .copyright {
     background-color: black;
     letter-spacing: 1.5px;
+    /* padding-bottom: 250px; */
 }
 
 .copyright a {
@@ -45,17 +37,12 @@
     font-weight: 600;
 }
 
-.contatos.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-@media (min-width: 968px) {
+@media (min-width: 768px) {
     .redes-sociais img {
         width: 60px;
     }
 
-    .contatos img {
-        display: inline-block;
-    }
+    /* .copyright {
+        padding: 20px 0;
+    } */
 }
