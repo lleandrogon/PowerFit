@@ -1,0 +1,204 @@
+[33mcommit a115bf8ba815cb68491d3bbaed59a39eeeca344f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Sat Nov 16 21:20:58 2024 -0300
+
+    Alterações do sistema de colunas do footer
+
+[33mcommit fbf7b3424faf2af65cab39f37716221692e7ef8e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Thu Nov 14 17:43:53 2024 -0300
+
+    Ajustando o rodapé
+
+[33mcommit 5de91df40390975d8c40e8ccda9e1de3f1cb9185[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Thu Nov 14 17:28:13 2024 -0300
+
+    Teste
+
+[33mcommit 4806dba26f77b8b341bfdcd484e0c09a79e7ed60[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Thu Nov 14 16:27:01 2024 -0300
+
+    Alterando o tamanho das redes sociais
+
+[33mcommit cb0ae24cc75cf9cc1aea037c4d67f27dae420b1c[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Thu Nov 14 12:12:03 2024 -0300
+
+    Alterando o tamanho do botão novamente
+
+[33mcommit 543f92573f60eba9d6217e48dec8a7cdb3f6e4f6[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Thu Nov 14 09:29:38 2024 -0300
+
+    Alterando tamanho do botão de matricula
+
+[33mcommit 90335b1a4ed47afecc6bbbb722b509aa3faee9ae[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Thu Nov 14 08:42:44 2024 -0300
+
+    Ajustes no Angular.json
+
+[33mcommit 75a8aa8d3e31b04e6a4732866f6c710d3798636d[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 12:10:50 2024 -0300
+
+    tentando hospedar no pages
+
+[33mcommit e9893fbf43570c88c0a47136885e2c88ad80890f[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 10:05:20 2024 -0300
+
+    Ajustando arquivo vercel
+
+[33mcommit a2c1bc6306c19188f8d8fcbc08d12e53c65ff1f7[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 10:00:32 2024 -0300
+
+    vercel json
+
+[33mcommit 36f85050b3a96fc60b68a985b0a59823194a553e[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 09:19:06 2024 -0300
+
+    Corrigindo erro de pasta docs
+
+[33mcommit e94c818fa836b1b7cae9b35f5aa6f50beb2cd055[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 08:55:35 2024 -0300
+
+    Adiciona build do projeto para deploy no GitHub Pages
+
+[33mcommit 8927bdf1a5b0cceb60a3356f2ff251c255f1758e[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Wed Nov 13 08:46:56 2024 -0300
+
+    Fazendo ajustes nos botões do componente home
+
+[33mcommit ecbe1de78d02be5e715cddcf4eb02a07b6ebc45a[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Tue Nov 12 22:21:07 2024 -0300
+
+    Adicionando animações ao home
+
+[33mcommit 9359170429dd9940c20c6320f3793cb6c02d6361[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Tue Nov 12 21:49:23 2024 -0300
+
+    Alguns ajustes
+
+[33mcommit b5859fe163bd21514d1a680b4d569ff8e44c4f3b[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Tue Nov 12 21:24:29 2024 -0300
+
+    Colocando preços nos cards
+
+[33mcommit b7c4ee176d2cca82b18bf4860f3d2166129d868c[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Tue Nov 12 12:32:12 2024 -0300
+
+    Terminei o formulário de currículo
+
+[33mcommit 6e319695ae8c8bfd53f1bc5b9c7a679e973e5c82[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Nov 10 22:57:06 2024 -0300
+
+    Desenvolvi o layout do formulário de currículo
+
+[33mcommit 1d90e6b3d9ed74957b4cdffdb2712ad9a5aaac29[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sat Nov 9 21:47:54 2024 -0300
+
+    terminei o componente equipe e fiz o componente produtos
+
+[33mcommit 8cc0bf6358d529acaa40dab1f96cd83572863659[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Fri Nov 8 20:17:05 2024 -0300
+
+    Terminando o componente equipe
+
+[33mcommit 3d2e2432aa16aeab198f8b51b179cbeea99ff999[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Thu Nov 7 20:56:26 2024 -0300
+
+    Fazendo o sistema de rotas e criando o componente equipe
+
+[33mcommit 06a23d7c6d4d93ed9b2b9f83a8dc5e9009b3b687[m
+Author: Leandro Gonçalves <lleandrogon2004@gmail.com>
+Date:   Tue Nov 5 21:39:01 2024 -0300
+
+    Avançando na validação do reactive forms e dando um upgrade no design
+
+[33mcommit 3dfb29abae17fddb0c8d3396afae4e2bfbabda4e[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Mon Nov 4 23:18:50 2024 -0300
+
+    Iniciando a validação do formulário
+
+[33mcommit 159a102112da1293ae108cadf2d04c4a48bf761f[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Nov 3 22:46:44 2024 -0300
+
+    Começando o componente de matriiculação
+
+[33mcommit cf6a292c111d1e5cea6aa66b20f9cdfe53ef85af[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Nov 3 16:25:50 2024 -0300
+
+    Iniciando o componente footer
+
+[33mcommit bfde040e9e1ca3b1673e15aab2d3198189c1992f[m
+Merge: 1a01ffb 2aea9b1
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sat Nov 2 16:58:33 2024 -0300
+
+    Merge branch 'main' of https://github.com/lleandrogon/PowerFit
+
+[33mcommit 1a01ffb61e61de730f6166f5b713f65769e4914f[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sat Nov 2 16:58:31 2024 -0300
+
+    .
+
+[33mcommit 2aea9b1801b52809b65e0243a7f4835172594da6[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Mon Oct 28 23:53:26 2024 -0300
+
+    .
+
+[33mcommit 93bd4aa9b14fe58addaff56d55dd02731726b552[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Oct 27 21:59:01 2024 -0300
+
+    Componente opinioes feito
+
+[33mcommit 9c606a60f68ce3774cda48ce374e32cf59091bd8[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Oct 27 00:00:36 2024 -0300
+
+    área de exercícios virou experiência
+
+[33mcommit db29991483a38f9d82bedd7923d446ad01fc00f0[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Fri Oct 25 23:59:33 2024 -0300
+
+    Primeira parte do componente Planos
+
+[33mcommit a1bf40e8300c77a988da65f075aa6b19739f0993[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sun Oct 20 00:06:28 2024 -0300
+
+    criando o componente planos
+
+[33mcommit 747341ea874e54f2f2a23dbc14119d93c0eefe0a[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sat Oct 19 21:22:04 2024 -0300
+
+    Construindo o home da minha aplicação
+
+[33mcommit 082bce2a667765ac944b9d420c6893dc6d5363bc[m
+Author: Leandro Gonçalves <159172886+lleandrogon@users.noreply.github.com>
+Date:   Sat Oct 12 18:42:41 2024 -0300
+
+    Initial commit
