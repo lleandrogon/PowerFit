@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RedeSocial } from '../../models/redeSocial';
 import { Contato } from '../../models/contato';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
@@ -51,7 +52,7 @@ export class FooterComponent {
     {
       tipo: 'endereço',
       foto: 'https://img.icons8.com/m_rounded/200/FFFFFF/home.png',
-      contato: 'Rua Angular da Silva, 689, JSlândia'
+      contato: 'Rua Angular Silva, 689, JSlândia'
     },
     {
       tipo: 'email',
