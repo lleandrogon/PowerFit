@@ -3,7 +3,7 @@
 }
 
 .redes-sociais img {
-    width: 40px;
+    width: 45px;
     margin-top: 70px;
     border-radius: 50%;
 }
@@ -22,7 +22,6 @@
 .copyright {
     background-color: black;
     letter-spacing: 1.5px;
-    /* padding-bottom: 250px; */
 }
 
 .copyright a {
@@ -41,8 +40,4 @@
     .redes-sociais img {
         width: 60px;
     }
-
-    /* .copyright {
-        padding: 20px 0;
-    } */
 }
